@@ -1,7 +1,9 @@
+package pilldorasinformaticas;
+
 
 import java.util.Scanner;
 
-public class AdivinaNumeroDoWhile {
+public class AdivinaNumero {
 
     public static void main(String[] args) {
 
@@ -12,7 +14,7 @@ public class AdivinaNumeroDoWhile {
         int num = 0;
         int intentos = 0;
 
-        do {
+        while (num != aleatorio) {
             intentos++;
             System.out.println("Introduce un número: ");
             num = sc.nextInt();
@@ -21,8 +23,8 @@ public class AdivinaNumeroDoWhile {
             } else if (aleatorio > num) {
                 System.out.println("Más alto");
             }
-        } while (num != aleatorio);
-        System.out.println("Correcto!!!, el número misterioso era el " + aleatorio + ", has necesitado " + intentos + " intentos");
+        }
+        System.out.println("Correcto, el número misterioso era el " + aleatorio);
 
     }
 
