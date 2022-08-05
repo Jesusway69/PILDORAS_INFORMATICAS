@@ -15,6 +15,7 @@ public class UsoVectores {
 
         for (int i = 0; i<v.length;i++);
         {
+            int i=0;
 
         System.out.println(v[i]);
         }

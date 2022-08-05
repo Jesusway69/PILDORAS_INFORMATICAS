@@ -1,4 +1,4 @@
-package pilldorasinformaticas;
+package pildorasinformaticas;
 
 public class UsoMatriz4 {
 
@@ -19,8 +19,9 @@ public class UsoMatriz4 {
         }
         for (int z = 0; z < 6; z++) {
             System.out.println();
+            int h=0;
             for (h=0; h<5; h++) {
-                System.out.printf( %1.2f, saldo[z][h]);
+                System.out.printf( %1.2f,saldo[z][h]);
                 System.out.print(" ");
 
             }

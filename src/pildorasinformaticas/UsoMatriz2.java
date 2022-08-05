@@ -12,6 +12,7 @@ public class UsoMatriz2 {
             {36, 25, 28, 39, 1},};
         for (int f = 0; f < 4; f++) {
             System.out.println();
+            int c=0;
             for (c = 0; c <m[0].length; c++) {
                 System.out.println(m[f][c] + " ");
 
