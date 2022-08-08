@@ -22,18 +22,19 @@ public class Coche {
         ancho = 300;
         motor = 1500;
         peso_plataforma = 500;
+        peso_total=1360;
     }
 
     public String dime_largo() { //método getter que nos devuelve un valor con texto
         return "El coche mide " + largo + " de largo";
     }
 
-    public void establece_color() { //método setter que establece valor y no devuelve dato (void)
-        color = "azul";
+    public void establece_color(String color_coche) { //método setter que establece valor y no devuelve dato (void)
+        color = color_coche;
 
     }
-    
-    public String dime_color(){//método getter que nos devuelve un valor con texto
+
+    public String dime_color() {//método getter que nos devuelve un valor con texto
         return "el color del coche es " + color;
     }
 }
