@@ -1,21 +1,23 @@
 package poo;
 
+import javax.swing.*;
 
 public class UsoCoche {
 
-  
     public static void main(String[] args) {
-        
-        Coche Fiat = new Coche(); //INSTANCIAR UNA CLASE, EJEMPLAR DE CLASE
-        Fiat.establece_color("azul maserati");//llamamos al método setter
-        //System.out.println("Este coche tiene " + Fiat.ruedas + " ruedas");
-Fiat.color="amarillo";/*error por no encapsular con private la variable de instancia color,
-el programa no da error pero imprime el último valor "amarillo" en lugar del 
-establecido en el método setter dentro de "establece_color"
-*/
-System.out.println("Este coche pesa " + Fiat.peso_total + " kilos");
- System.out.println(Fiat.dime_color());
 
+        Coche Fiat_Bravo = new Coche(); //INSTANCIAR UNA CLASE, EJEMPLAR DE CLASE
+        Fiat_Bravo.establece_color("azul maserati");//llamamos al método setter
+        Fiat_Bravo.configura_climatizador("si");//llamamos al método setter
+        Fiat_Bravo.configura_asientos("si");//llamamos al método setter
+        System.out.println("Este coche tiene " + Fiat_Bravo.dime_cantidad_ruedas() + " ruedas + una de emergencia");
+        System.out.println(Fiat_Bravo.dime_datos_generales());
+        System.out.println(Fiat_Bravo.dime_color());
+        System.out.println(Fiat_Bravo.dime_asientos());
+        System.out.println(Fiat_Bravo.dime_climatizador());
+        System.out.println(Fiat_Bravo.dime_peso_coche());
+        System.out.println("El precio final del coche es " + Fiat_Bravo.precio_coche() + "€");
+        System.out.println("El coche tiene un motor de " + Fiat_Bravo.getMotor() + " centímetros cúbicos");
     }
 
 }
