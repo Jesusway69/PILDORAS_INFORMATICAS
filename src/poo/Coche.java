@@ -80,7 +80,11 @@ pero como la variable de clase espera un boolean y el argumento un string nos da
     } 
 
     public String dime_asientos() {
-        if (asientos_cuero == true) {
+        if (asientos_cuero==true) {
+            /*Aquí hemos puesto el comparador ==true aunque en realidad no es
+            necesario ya que por defecto java interpreta que el estado inicial
+            de un booleano es true, si ponemos if(asientos_cuero) funciona igual.
+            */ 
             return "El coche tiene asientos de cuero";
         } else {
             return "El coche no tiene asientos de cuero";
@@ -100,6 +104,10 @@ pero como la variable de clase espera un boolean y el argumento un string nos da
 
     public String dime_climatizador() {
         if (climatizador == true) {
+            /*Aquí hemos puesto el comparador ==true aunque en realidad no es
+            necesario ya que por defecto java interpreta que el estado inicial
+            de un booleano es true, si ponemos if(climatizador) funciona igual.
+            */ 
             return "El coche tiene climatizador";
         } else {
             return "el coche no tiene climatizador";

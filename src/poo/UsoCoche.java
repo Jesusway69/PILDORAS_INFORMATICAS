@@ -17,7 +17,7 @@ public class UsoCoche {
         System.out.println(Fiat_Bravo.dime_climatizador());
         System.out.println(Fiat_Bravo.dime_peso_coche());
         System.out.println("El precio final del coche es " + Fiat_Bravo.precio_coche() + "€");
-        System.out.println("El coche tiene un motor de " + Fiat_Bravo.getMotor() + " centímetros cúbicos");
+        System.out.println("El coche tiene un motor de " + Fiat_Bravo.getMotor() + "      centímetros cúbicos");
     }
 
 }
