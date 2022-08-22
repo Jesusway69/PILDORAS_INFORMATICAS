@@ -21,7 +21,7 @@ public class UsoMatriz4 {
             System.out.println();
             int h=0;
             for (h=0; h<5; h++) {
-                System.out.printf( %1.2f,saldo[z][h]);
+                System.out.print(saldo[z][h]);
                 System.out.print(" ");
 
             }
