@@ -1,12 +1,11 @@
 package poo;
 
-import javax.swing.*;
 
-public class UsoCoche {
+public class UsoVehiculo {
 
     public static void main(String[] args) {
 
-        Coche Fiat_Bravo = new Coche(); //INSTANCIAR UNA CLASE, EJEMPLAR DE CLASE
+        /*Coche Fiat_Bravo = new Coche(); //INSTANCIAR UNA CLASE, EJEMPLAR DE CLASE
         Fiat_Bravo.establece_color("azul maserati");//llamamos al método setter
         Fiat_Bravo.configura_climatizador("si");//llamamos al método setter
         Fiat_Bravo.configura_asientos("si");//llamamos al método setter
@@ -17,7 +16,17 @@ public class UsoCoche {
         System.out.println(Fiat_Bravo.dime_climatizador());
         System.out.println(Fiat_Bravo.dime_peso_coche());
         System.out.println("El precio final del coche es " + Fiat_Bravo.precio_coche() + "€");
-        System.out.println("El coche tiene un motor de " + Fiat_Bravo.getMotor() + "      centímetros cúbicos");
+        System.out.println("El coche tiene un motor de " + Fiat_Bravo.getMotor() + " centímetros cúbicos"); */
+        
+       Furgoneta Fiat_Doblo = new Furgoneta (1,600);
+        Fiat_Doblo.establece_color("Blanco");
+        
+        Fiat_Doblo.establece_color("Blanco");
+        Fiat_Doblo.configura_asientos("No");
+        Fiat_Doblo.configura_climatizador("Si");
+        System.out.println(Fiat_Doblo.dime_datos_generales() + " , "  + Fiat_Doblo.dimeDatosFurgoneta() +" , \n" +  Fiat_Doblo.dime_color());
+        
+        
     }
 
 }

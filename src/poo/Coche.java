@@ -12,6 +12,7 @@ public class Coche {
     private String color;
     private int peso_total;
     private boolean asientos_cuero, climatizador;
+    public int plazas;
 
 
     /*private es un modificador de acceso que encapsula el dato
@@ -24,12 +25,13 @@ public class Coche {
         motor = 2000;
         peso_plataforma = 500;
         peso_total = 1360;
+        plazas = 5;
     }
 
     public String dime_datos_generales() { //método getter que nos devuelve valores con el texto que queramos
-        return "La plataforma del coche tiene " + ruedas + " ruedas , mide "
-                + largo / 1000 + " metros con un ancho de " + ancho
-                + " cms , un peso de plataforma de " + peso_plataforma + " kilos";
+        return "La plataforma del vehículo tiene " + ruedas + " ruedas , \n mide "
+                + largo / 1000 + " metros \n con un ancho de " + ancho
+                + " cms,\n un peso de plataforma de " + peso_plataforma + " kilos";
 
     }
 
@@ -68,7 +70,7 @@ con el this. le decimos a java que nos referimos a la variable de clase si se ll
 pero como la variable de clase espera un boolean y el argumento un string nos da error
  para solucionarlo le añadiremos un condicional al método setter*/
         
-        if (asientos_cuero == "no") {/*este condicional así funciona en consola pero no 
+        if (asientos_cuero == "si") {/*este condicional así funciona en consola pero no 
             con entrada de datos por teclado porque lo correcto cuando se comparan cadenas es
             con el método equals así: if(climatizador.equalsignorecase("no"))
             */
@@ -149,6 +151,10 @@ pero como la variable de clase espera un boolean y el argumento un string nos da
     public void setMotor(int motor) {
         this.motor = motor;
     }
+    public void cantidadPlazas(){
+        this.plazas = plazas;
+    }
+            
 }
 
 
