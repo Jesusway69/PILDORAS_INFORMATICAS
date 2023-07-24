@@ -1,6 +1,7 @@
-package pilldorasinformaticas;
+package pildorasinformaticas;
 
-import javax.swing.*;
+
+import javax.swing.JOptionPane;
 
 public class JavaOptionPane {
 
